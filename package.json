@@ -1,5 +1,6 @@
 {
-  "name": "react-app-files",
+  "name": "ucima-app",
+  "homepage":"https://ucima15.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

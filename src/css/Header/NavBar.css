@@ -1,0 +1,125 @@
+.nav-bar {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 24px 26px;
+  min-width: 360px;
+  z-index: 20;
+}
+.nav-bar .nav-logo {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 5px;
+}
+.nav-bar .nav-logo::after {
+  content: url(../../images/app-logo.png);
+  order: -1;
+  margin-bottom: 5px;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 122px;
+  background-color: var(--dark-violet);
+  font-size: 14px;
+  font-weight: 700;
+  height: calc(100vh - 122px);
+  padding: 34px 24px;
+  min-width: 360px;
+  z-index: 70;
+  left: 0;
+}
+.nav-bar li {
+  display: flex;
+  padding: 14px 30px;
+  align-items: center;
+}
+.nav-bar ul.menu-hidden {
+  display: none;
+}
+.nav-bar ul.menu-active {
+  display: flex;
+}
+
+.nav-bar ul a {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: var(--light-gray);
+  text-decoration: none;
+}
+.nav-bar a.active {
+  border: 1px solid var(--light-gray);
+}
+.nav-bar button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.nav-bar button.open::after {
+  content: url("../../images/icon-hamburger.svg");
+}
+.nav-bar button.close::after {
+  content: url("../../images/icon-close.svg");
+}
+@media screen and (min-width: 790px) {
+  .nav-bar ul {
+    flex-direction: row;
+    position: static;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    width: auto;
+    transition: none;
+  }
+  .nav-bar ul.menu-hidden {
+    display: flex;
+  }
+  .nav-bar li {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .nav-bar ul a {
+    color: var(--gray-violet);
+    margin-bottom: 0;
+    width: auto;
+    padding: 14px 30px;
+  }
+  .nav-bar ul a:hover {
+    color: var(--dark-violet);
+  }
+  .nav-bar ul a.active {
+    border: none;
+    color: var(--light-gray);
+    background-color: var(--dark-violet);
+  }
+  .nav-bar button {
+    display: none;
+  }
+  .nav-bar li:not(:last-child) {
+    margin-right: 27px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav-bar {
+    padding: 21px 165px;
+  }
+}

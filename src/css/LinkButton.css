@@ -1,0 +1,16 @@
+.cta-button {
+  color: var(--light-gray);
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  padding: 15px 30px;
+  border: 1px solid var(--light-gray);
+  /* width: 147px; */
+}
+.cta-button:hover {
+  background-color: var(--light-gray);
+  color: var(--dark-violet);
+}

@@ -1,0 +1,90 @@
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 60px 0;
+  background-color: var(--dark-violet);
+}
+.works ul {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  list-style: disc;
+  font-size: 16px;
+  max-width: 1140px;
+  color: var(--light-gray);
+}
+.works ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 25px;
+  position: relative;
+}
+.works ul li p::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.works ul li p:first-child {
+  margin-bottom: 12px;
+}
+.works ul li p:first-child::before {
+  background-image: url(../../images/push-pin.png);
+}
+.works ul li p:last-child {
+  font-style: italic;
+  font-size: 12px;
+  width: 100%;
+}
+.works ul li:not(:last-child) {
+  margin-bottom: 40px;
+}
+.works ul li p:last-child::before {
+  background-image: url(../../images/placeholder-3.png);
+}
+.works h2 {
+  width: 100%;
+  align-self: flex-start;
+  max-width: 85%;
+  padding: 30px 20px;
+  background-color:  var(--light-gray);
+  color: var(--dark-violet);
+  font-family: "Karla", sans-serif;
+  letter-spacing: 1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.works .cta-button {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .works h2 {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .works h2 {
+    max-width: 30%;
+  }
+  .works ul {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1140px) {
+}

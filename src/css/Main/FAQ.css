@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  padding: 0 24px;
+  padding: 0 26px;
   margin-bottom: 60px;
 }
 
@@ -10,20 +10,24 @@
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 60px;
-  color: var(--dark-violet);
+  font-family: "DM Serif Display", sans-serif;
+  color: var(--primary-violet);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .faq-wrapper article {
   display: flex;
   flex-wrap: wrap;
+  font-family: "Karla", sans-serif;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   text-align: left;
+  color: var(--dark-violet);
   padding: 30px 15px;
   transition: all 0.3s;
+  overflow: hidden;
 }
 
 .faq-wrapper article:not(:last-child) {
@@ -35,15 +39,14 @@
   max-width: 90%;
   cursor: pointer;
   font-weight: 700;
-  color: var(--dark-violet);
 }
 
 .faq-wrapper article .answer {
   width: 100%;
   max-width: 90%;
   line-height: 1.7;
-  display: none;
   margin-top: 30px;
+  display: none;
 }
 
 .faq-wrapper article.active .answer {
@@ -67,6 +70,9 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--dark-violet);
+}
+.faq-wrapper article ul {
+  margin-top: 12px;
 }
 
 .faq-wrapper article.active button {

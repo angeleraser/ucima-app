@@ -74,7 +74,7 @@ export const ocupationsData = [
   {
     icon: <img src="./images/doctor.png" alt="doctor icon" />,
     description:
-      "Médico cirujano y especialista en cirugía laparoscópica. Egresado de la universidad de Oriente, Venezuela.",
+      "Médico cirujano y especialista en cirugía laparoscópica. Egresado de la Universidad de Oriente, Venezuela.",
   },
   {
     icon: <img src="./images/pharmacy.png" alt="pharmacy icon" />,
@@ -224,22 +224,77 @@ export const faqData = [
 export const methodsData = [
   {
     step: 1,
-    description: "La mayoría de las laparoscopias se hacen bajo anestesia general. La anestesia general es un medicamento que deja al paciente profundamente dormido (inconsciente). Usted no sentirá ningún dolor durante la cirugía. El medicamento se administra por vía intravenosa (IV, por una vena) o inhalando gases a través de una máscara. Un médico llamado anestesiólogo administra este medicamento, si no le administran anestesia general, le inyectarán un medicamento en el abdomen para adormecer el área para que no sienta ningún dolor.",
+    description:
+      "La mayoría de las laparoscopias se hacen bajo anestesia general. La anestesia general es un medicamento que deja al paciente profundamente dormido (inconsciente). Usted no sentirá ningún dolor durante la cirugía. El medicamento se administra por vía intravenosa (IV, por una vena) o inhalando gases a través de una máscara. Un médico llamado anestesiólogo administra este medicamento, si no le administran anestesia general, le inyectarán un medicamento en el abdomen para adormecer el área para que no sienta ningún dolor.",
   },
   {
     step: 2,
-    description: "Una vez que esté inconsciente o su abdomen esté completamente adormecido, el cirujano le hará una incisión pequeña justo debajo del ombligo o cerca de esa región, el laparoscopio, un tubo delgado con una cámara en un extremo, se inserta a través de la incisión. Se pueden hacer más incisiones pequeñas si se necesita una sonda u otras herramientas quirúrgicas.",
+    description:
+      "Una vez que esté inconsciente o su abdomen esté completamente adormecido, el cirujano le hará una incisión pequeña justo debajo del ombligo o cerca de esa región, el laparoscopio, un tubo delgado con una cámara en un extremo, se inserta a través de la incisión. Se pueden hacer más incisiones pequeñas si se necesita una sonda u otras herramientas quirúrgicas.",
   },
   {
     step: 3,
-    description: "Durante el procedimiento, se coloca un tipo de gas en el abdomen. Esto expande la región y permite que el cirujano vea el interior del cuerpo, el cirujano moverá el laparoscopio alrededor de esa región. Mirará las imágenes del abdomen y de los órganos pélvicos en una pantalla de computadora.",
+    description:
+      "Durante el procedimiento, se coloca un tipo de gas en el abdomen. Esto expande la región y permite que el cirujano vea el interior del cuerpo, el cirujano moverá el laparoscopio alrededor de esa región. Mirará las imágenes del abdomen y de los órganos pélvicos en una pantalla de computadora.",
   },
   {
     step: 4,
-    description: "Cuando el procedimiento haya terminado, se quitarán las herramientas quirúrgicas y la mayor parte del gas. Las incisiones pequeñas se cerrarán, usted será trasladado a una sala de recuperación.",
+    description:
+      "Cuando el procedimiento haya terminado, se quitarán las herramientas quirúrgicas y la mayor parte del gas. Las incisiones pequeñas se cerrarán, usted será trasladado a una sala de recuperación.",
   },
   {
     step: 5,
-    description: "Después de la laparoscopia, tal vez sienta sueño o náuseas por unas horas.",
-  }
+    description:
+      "Después de la laparoscopia, tal vez sienta sueño o náuseas por unas horas.",
+  },
+];
+
+export const establishmentImages = [
+  {
+    name: "consulta médica",
+    url: "./images/consultorio-1.jpg",
+  },
+
+  {
+    name: "sala de operación",
+    url: "./images/sala-operacion-1.jpg",
+  },
+  {
+    name: "camilla de operacion",
+    url: "./images/camilla-operacion.jpg",
+  },
+  {
+    name: "consultorio vacío",
+    url: "./images/consultorio-2.jpg",
+  },
+  {
+    name: "equipos",
+    url: "./images/equipos.jpg",
+  },
+  {
+    name: "silla quirúrgica",
+    url: "./images/sala-operacion-2.jpg",
+  },
+];
+export const establishmentImages2 = [
+  {
+    name: "doctor giuseppe operando",
+    url: "./images/operacion-2.jpg",
+  },
+  {
+    name: "sala de operación",
+    url: "./images/operacion-1.jpg",
+  },
+  {
+    name: "camillas",
+    url: "./images/sala-operacion-3.jpg",
+  },
+  {
+    name: "sala de operaciones",
+    url: "./images/sala-operacion-4.jpg",
+  },
+  {
+    name: "consultorio frente",
+    url: "./images/consultorio-frente.jpg",
+  },
 ];

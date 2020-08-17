@@ -12,8 +12,8 @@ const HWWBanner = () => {
           classes="cta-button"
           label="DR. GIUSEPPE A. COIRO"
         />
-        <LinkButton route="/" classes="cta-button" label="U.C.I.M.A" />
-        <LinkButton route="/" classes="cta-button" label="CONTACTAR" />
+        <LinkButton route="/ucima" classes="cta-button" label="U.C.I.M.A" />
+        <LinkButton route="/contact" classes="cta-button" label="CONTACTAR" />
       </div>
     </article>
   );

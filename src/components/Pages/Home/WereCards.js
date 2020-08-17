@@ -7,7 +7,7 @@ const WereCards = () => {
     return (
       <article key = {i}>
         <div className="icon">{icon}</div>
-        <h2>{title}</h2>
+        <h1>{title}</h1>
         <p>{description}</p>
       </article>
     );

@@ -11,8 +11,11 @@
 }
 /* Personal Page  */
 .main-content.personal {
-  padding: 60px 0;
+  padding: 60px 0 0;
   align-items: center;
+}
+.main-content.ucima {
+  padding: 0 26px;
 }
 
 .main-content.blog {
@@ -59,4 +62,8 @@
   .main-content.blog {
     padding: 0 ;
   }
+  .main-content.ucima {
+    padding: 0 165px;
+  }
+
 }

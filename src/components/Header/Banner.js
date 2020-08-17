@@ -16,7 +16,7 @@ const Banner = () => {
         <LinkButton
           label="más información"
           route="/blog"
-          classes="cta-button "
+          classes="cta-button"
         />
       </div>
       <div className="image"></div>

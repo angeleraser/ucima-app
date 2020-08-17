@@ -42,8 +42,9 @@
 }
 .nav-bar li {
   display: flex;
-  padding: 14px 30px;
+  padding: 0;
   align-items: center;
+  justify-content: center;
 }
 .nav-bar ul.menu-hidden {
   display: none;
@@ -53,10 +54,12 @@
 }
 
 .nav-bar ul a {
-  padding: 0;
+  padding: 14px 30px;
   width: 100%;
   text-align: center;
+  font-family: "Karla", sans-serif;
   display: inline-block;
+  text-transform: uppercase;
   color: var(--light-gray);
   text-decoration: none;
 }
@@ -73,14 +76,16 @@
   background-color: transparent;
   border: none;
   outline: none;
-}
-.nav-bar button.open::after {
-  content: url("../../images/icon-hamburger.svg");
+  cursor: pointer;
 }
 .nav-bar button.close::after {
+  content: url("../../images/icon-hamburger.svg");
+}
+.nav-bar button.open::after {
   content: url("../../images/icon-close.svg");
 }
-@media screen and (min-width: 790px) {
+
+@media screen and (min-width: 800px) {
   .nav-bar ul {
     flex-direction: row;
     position: static;
@@ -99,17 +104,35 @@
   }
   .nav-bar ul a {
     color: var(--gray-violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 0;
     width: auto;
-    padding: 14px 30px;
+    padding: 14px 30px 9px;
+    border-radius: 40px;
+  }
+  .nav-bar ul a::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    background-color: var(--primary-violet);
+    height: 2px;
+    width: 100%;
+    margin-top: 3px;
+    transform: scale(0);
+    transition: all .4s;
   }
   .nav-bar ul a:hover {
     color: var(--dark-violet);
   }
+  .nav-bar ul a:hover::after{
+    transform: scale(1);
+  }
   .nav-bar ul a.active {
     border: none;
     color: var(--light-gray);
-    background-color: var(--dark-violet);
+    background-color: var(--primary-violet);
   }
   .nav-bar button {
     display: none;

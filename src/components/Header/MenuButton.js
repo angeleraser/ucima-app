@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-const MenuButton = ({displayMenu}) => {
-  const [isClosed, setClassName] = useState(true);
+import { useEffect } from "react";
+import { useContext } from "react";
+import { AppContext } from "../App/AppContext";
+const MenuButton = () => {
+  const { menuHidden, displayMenu } = useContext(AppContext);
+  const [isClosed, setMenuButtonClassName] = useState(menuHidden);
+  useEffect(() => {
+    setMenuButtonClassName(menuHidden);
+  }, [menuHidden]);
   return (
     <button
       onClick={() => {
-        displayMenu(!isClosed)
-        setClassName(!isClosed);
+        displayMenu();
       }}
-      className={isClosed ? "open" : "close"}></button>
+      className={!isClosed ? "open" : "close"}></button>
   );
 };
 

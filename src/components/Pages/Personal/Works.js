@@ -55,7 +55,7 @@ const Works = () => {
           <p>Complejo Hospitalario Ruíz y Paez. Ciudad Bolívar.</p>
         </li>
       </ul>
-      <LinkButton route='/' classes="cta-button" label="Contactar" />
+      <LinkButton route="/contact" classes="cta-button" label="Contactar" />
     </section>
   );
 };

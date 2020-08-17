@@ -7,11 +7,12 @@
   font-family: "DM Serif Display", sans-serif;
   color: var(--light-gray);
   text-align: center;
-  padding: 56px 30px;
+  padding: 56px 26px;
   max-width: 1140px;
   margin-top: 142px;
+  background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right ;
 }
 .how-we-work-banner h2 {
   font-size: 42px;
@@ -25,12 +26,18 @@
   row-gap: 15px;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1024px) {
   .how-we-work-banner {
     flex-direction: row;
-    padding: 64px 80px;
+    padding: 80px;
     justify-content: space-between;
     margin-top: 165px;
+    max-width: 1240px;
+    border-top-right-radius: 5px;
+    align-self: flex-start;
+    border-bottom-right-radius: 120px;
+    background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
+    background-size: cover;
   }
   .how-we-work-banner h2 {
     margin-bottom: 0;

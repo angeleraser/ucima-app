@@ -17,7 +17,7 @@
 .were-cards article:not(:last-child) {
   margin-bottom: 60px;
 }
-.were-cards article h2 {
+.were-cards article h1 {
   font-family: "DM Serif Display", sans-serif;
   font-size: 22px;
   color: var(--primary-violet);
@@ -46,7 +46,7 @@
   .were-cards article {
     align-items: flex-start;
   }
-  .were-cards article h2{
+  .were-cards article h1{
     padding: 0;
   }
 }

@@ -12,7 +12,7 @@
   padding: 30px 20px;
   background-color: var(--primary-violet);
   color: white;
-  font-family: "Karla", sans-serif;
+  font-family: "DM Serif Display", sans-serif;
   letter-spacing: 1px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 40px;
@@ -24,7 +24,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: 312px;
-  row-gap: 30px;
+  row-gap: 60px;
   place-content: center;
   max-width: 1140px;
 }
@@ -48,30 +48,10 @@
   flex-direction: column;
   color: var(--gray-violet);
   line-height: 1.7;
+  font-family: "Karla", sans-serif;
   width: 100%;
   height: 100%;
 }
-
-/* .academic-awards .awards-list p span {
-  display: inline-block;
-  font-size: 14px;
-  font-style: italic;
-  margin: auto 0 0 0;
-}
-
-.academic-awards .awards-list p span::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url(../../images/placeholder-3.png);
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 2px;
-  margin-right: 6px;
-} */
 
 .academic-awards .awards-list p:first-of-type {
   margin-top: 18px;
@@ -82,15 +62,13 @@
   }
 }
 
-@media screen and (min-width: 860px) {
-  .academic-awards h2 {
-    max-width: 30%;
-  }
-}
 @media screen and (min-width: 1140px) {
   .academic-awards .awards-list {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 0;
     column-gap: 80px;
+  }
+  .academic-awards h2 {
+    max-width: 30%;
   }
 }

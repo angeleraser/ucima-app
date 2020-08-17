@@ -72,8 +72,6 @@
     grid-template-rows: repeat(3, 300px);
     place-content: flex-start;
     width: 100%;
-    place-items: flex-start;
-    gap: 20px;
   }
   .establishment .grid-img-wrapper-2 {
     grid-template-columns: repeat(2, 1fr);

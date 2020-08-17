@@ -40,7 +40,7 @@ export const App = () => {
   };
   useEffect(() => {
     const currentPage = links.find((link) => link.current);
-    document.title = `U.C.I.M.A ${currentPage ? "- " + currentPage.name : ""}`;
+    document.title = `U.C.I.M.A - ${currentPage ?  currentPage.name : "Inicio"}`;
   }, [links]);
   return (
     <AppContext.Provider value={providerValue}>

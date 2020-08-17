@@ -39,6 +39,10 @@
   min-width: 360px;
   z-index: 70;
   left: 0;
+  background-image: url(../../images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
 }
 .nav-bar li {
   display: flex;
@@ -94,6 +98,7 @@
     background-color: transparent;
     width: auto;
     transition: none;
+    background-image: none;
   }
   .nav-bar ul.menu-hidden {
     display: flex;

@@ -42,7 +42,7 @@
   background-image: url(../../images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: 100% 40%;
 }
 .nav-bar li {
   display: flex;

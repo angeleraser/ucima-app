@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../css/Main/Contact.css";
-import { socialNetworks } from "../../../svg-icons";
+import { socialNetworks } from "../../../data";
 const Contact = () => {
   return (
     <main className="main-content contact">
@@ -19,13 +19,14 @@ const Contact = () => {
           </li>
           <li>
             <h4 className="title phone-number">Números telefónicos:</h4>
-            <p>+58-4148714271.</p>
-            <p>+58-4265902809.</p>
+            <p>(+58)4148714271.</p>
+            <p>(+58)4265902809.</p>
           </li>
           <li>
             <h4 className="title email">Correo electrónico:</h4>
             <p>gcoiro@gmail.com.</p>
-            <a className="contact-email-btn" href="mailto:gcoiro@gmail.com">
+            <p>ucima2017@gmail.com.</p>
+            <a className="contact-email-btn" href="mailto:gcoiro15@gmail.com">
               Enviar un correo
             </a>
           </li>

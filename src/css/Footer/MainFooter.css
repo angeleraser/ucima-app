@@ -88,7 +88,7 @@
   letter-spacing: 5px;
 }
 .main-footer .nav-logo::after {
-  content: url(../../images/app-logo.png);
+  content: url(../../images/png/app-logo.png);
   order: -1;
   margin-bottom: 5px;
 }

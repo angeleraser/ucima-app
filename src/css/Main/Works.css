@@ -41,7 +41,7 @@
   margin-bottom: 12px;
 }
 .works ul li p:first-child::before {
-  background-image: url(../../images/push-pin.png);
+  background-image: url(../../images/png/push-pin.png);
 }
 .works ul li p:last-child {
   font-style: italic;
@@ -52,7 +52,7 @@
   margin-bottom: 60px;
 }
 .works ul li p:last-child::before {
-  background-image: url(../../images/placeholder-3.png);
+  background-image: url(../../images/png/placeholder-3.png);
 }
 .works h2 {
   width: 100%;

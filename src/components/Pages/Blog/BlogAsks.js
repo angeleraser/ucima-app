@@ -20,7 +20,7 @@ const BlogAsks = () => {
           corto.
         </p>
         <img
-          src="./images/laparoscopia-operacion.png"
+          src="./images/png/laparoscopia-operacion.png"
           alt="laparoscopia-operacion"
         />
       </article>

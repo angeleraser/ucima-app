@@ -10,7 +10,7 @@
   padding: 56px 26px;
   max-width: 1140px;
   margin-top: 142px;
-  background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+  background-image: url(../../images/svg/bg-pattern-how-we-work-mobile.svg);
   background-repeat: no-repeat;
   background-position: top right ;
 }
@@ -36,8 +36,8 @@
     border-top-right-radius: 5px;
     align-self: flex-start;
     border-bottom-right-radius: 120px;
-    background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
-    background-size: cover;
+    background-image: url(../../images/svg/bg-pattern-how-we-work-desktop.svg);
+    background-size: 50% 100%;
   }
   .how-we-work-banner h2 {
     margin-bottom: 0;

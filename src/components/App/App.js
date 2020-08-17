@@ -10,6 +10,7 @@ import {
   AppReducer,
 } from "./AppContext";
 import { useEffect } from "react";
+import Home from "../Pages/Home/Home";
 
 export const App = () => {
   const [{ menuHidden, links }, dispatch] = AppContextReducer(
@@ -36,11 +37,10 @@ export const App = () => {
     styleCurrentLink,
     removeCurrentLinkStyle,
     links,
-    dispatch,
   };
   useEffect(() => {
     const currentPage = links.find((link) => link.current);
-    document.title = `U.C.I.M.A - ${currentPage ?  currentPage.name : "Inicio"}`;
+    document.title = `U.C.I.M.A - ${currentPage ? currentPage.name : "Inicio"}`;
   }, [links]);
   return (
     <AppContext.Provider value={providerValue}>

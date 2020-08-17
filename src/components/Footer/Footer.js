@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "../../css/Footer/MainFooter.css";
-import { socialNetworks } from "../../svg-icons";
+import { socialNetworks } from "../../data";
 import { LinkButton } from "../BaseComponents/LinkButton";
 import { useContext } from "react";
 import { AppContext } from "../App/AppContext";
@@ -11,7 +11,13 @@ const Footer = () => {
   return (
     <footer className="main-footer outline-none">
       <ul className="contact-info">
-        <Link onClick={removeCurrentLinkStyle} to={"/"} className="nav-logo">
+        <Link
+          onClick={() => {
+            removeCurrentLinkStyle();
+            window.scrollTo(0, 0);
+          }}
+          to={"/"}
+          className="nav-logo">
           {" "}
           U.C.I.M.A
         </Link>
@@ -19,9 +25,9 @@ const Footer = () => {
           Centro Clínico Universidad de Oriente. <br /> Piso 1, Consultorio 09.{" "}
           <br /> Ciudad Bolívar, Venezuela.
         </li>
-        <li className="phone-number">+58-4148714271.</li>
-        <li className="phone-number">+58-4265902809.</li>
-        <li className="email">gcoiro@gmail.com.</li>
+        <li className="phone-number">(+58)4148714271.</li>
+        <li className="phone-number">(+58)4265902809.</li>
+        <li className="email">gcoiro15@gmail.com.</li>
       </ul>
       {/* Social links  */}
       <nav>

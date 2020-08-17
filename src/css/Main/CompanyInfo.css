@@ -20,7 +20,7 @@
 .company-info .cta-button {
   background-color: var(--primary-violet);
   align-self: flex-start;
-  margin: 30px 0 0;
+  margin: 30px 0;
 }
 .company-info .cta-button:hover {
   background-color: transparent;

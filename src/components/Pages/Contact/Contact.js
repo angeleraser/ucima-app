@@ -30,7 +30,7 @@ const Contact = () => {
           </li>
           <li>
             <h4 className="title email">Correo electrónico:</h4>
-            <p>gcoiro@gmail.com.</p>
+            <p>gcoiro@15gmail.com.</p>
             <p>ucima2017@gmail.com.</p>
             <a className="contact-email-btn" href="mailto:gcoiro15@gmail.com">
               Enviar un correo

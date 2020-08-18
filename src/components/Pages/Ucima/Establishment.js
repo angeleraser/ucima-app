@@ -7,7 +7,7 @@ const Establishment = () => {
   return (
     <section className="establishment">
       <h1>Nuestras instalaciones</h1>
-      <div className="grid-img-wrapper-1">
+      <div className="grid-img-wrapper-1 animate__animated animate__fadeIn">
         {establishmentImages.map((img, i) => (
           <img key={i} src={img.url} alt={img.name}></img>
         ))}
@@ -20,7 +20,9 @@ const Establishment = () => {
         {!loadMore ? "Mostrar más" : "Ocultar"}
       </button>
       {loadMore && (
-        <div className="grid-img-wrapper-2">
+        <div
+          className="grid-img-wrapper-2
+        animate__animated animate__fadeIn ">
           {establishmentImages2.map((img, i) => (
             <img key={i} src={img.url} alt={img.name}></img>
           ))}

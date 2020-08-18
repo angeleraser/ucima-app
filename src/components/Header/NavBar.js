@@ -8,15 +8,10 @@ import { AppContext } from "../App/AppContext";
 import { useContext } from "react";
 
 const NavBar = () => {
-  const {
-    links,
-    styleCurrentLink,
-    removeCurrentLinkStyle,
-    menuHidden,
-  } = useContext(AppContext);
+  const { links, menuHidden, currentPage, hiddenMenu } = useContext(AppContext);
   return (
     <nav className="nav-bar">
-      <Link onClick={removeCurrentLinkStyle} to={"/"} className="nav-logo">
+      <Link to={"/"} className="nav-logo" onClick={hiddenMenu}>
         {" "}
         U.C.I.M.A
       </Link>
@@ -25,10 +20,8 @@ const NavBar = () => {
         {links.map((link) => (
           <li key={link.name}>
             <Link
-              onClick={() => {
-                styleCurrentLink(link.route);
-              }}
-              className={`${link.current ? "active" : ""}`}
+              onClick={hiddenMenu}
+              className={`${link.route === currentPage ? "active" : ""}`}
               to={link.route}>
               {link.name}
             </Link>

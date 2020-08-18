@@ -42,7 +42,7 @@
   background-image: url(../../images/svg/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100% 40%;
+  background-size: 100% 35%;
   transition: left 0.5s;
 }
 .nav-bar li {
@@ -53,7 +53,7 @@
   padding: 14px 30px;
 }
 .nav-bar li:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .nav-bar ul.menu-hidden {
   left: 100%;
@@ -111,6 +111,9 @@
   }
   .nav-bar li {
     padding: 0;
+  }
+  .nav-bar li:first-child {
+    display: none;
   }
   .nav-bar li:not(:last-child) {
     margin-bottom: 0;

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import WereCards from "./WereCards";
 import HWWBanner from "./HWWBanner";
 import Banner from "../../Header/Banner";
-import { useHistory } from "react-router-dom";
+import { AppContext } from "../../App/AppContext";
 const Home = () => {
-  const {location:{pathname}} = useHistory();
-  console.log(pathname)
+  const { setCurrentPage } = useContext(AppContext);
+  useEffect(() => {
+    setCurrentPage("/");
+  });
   return (
     <main className="main-content home">
       <Banner />

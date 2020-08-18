@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../../css/Main/MainContent.css";
 import QuienesSomos from "./QuienesSomos";
 import Establishment from "./Establishment";
-import { useHistory } from "react-router-dom";
+import { AppContext } from "../../App/AppContext";
+import { useEffect } from "react";
 const Ucima = () => {
-  const {location:{pathname}} = useHistory();
-  console.log(pathname)
+  const { setCurrentPage } = useContext(AppContext);
+  useEffect(() => {
+    setCurrentPage("/ucima");
+  });
   return (
     <main className="main-content ucima">
       <QuienesSomos />

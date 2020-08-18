@@ -9,7 +9,9 @@ const Question = ({ quest, answer, id }) => {
   };
   return (
     <article
-      className={`${isActive ? "active" : ""} question-${id}`}>
+      className={`${
+        isActive ? "active" : ""
+      } question-${id}`}>
       <h2 onClick={showHiddenQuestion}>{quest}</h2>
       <button onClick={showHiddenQuestion}></button>
       <div className={`answer`}>{answer}</div>

@@ -4,7 +4,9 @@ import { ocupationsData } from "../../../data";
 const Ocupations = () => {
   return (
     <section className="ocupations-wrapper">
-      <h2>Dr. Giuseppe A. Coiro</h2>
+      <h2 className="animate__backInLeft animate__animated">
+        Dr. Giuseppe A. Coiro
+      </h2>
       <div className="ocupations-list">
         {ocupationsData.map((article, i) => (
           <article key={i}>

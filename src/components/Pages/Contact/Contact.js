@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../../css/Main/Contact.css";
 import { socialNetworks } from "../../../data";
+import { useContext } from "react";
+import { AppContext } from "../../App/AppContext";
 const Contact = () => {
+  const { setCurrentPage } = useContext(AppContext);
+  useEffect(() => {
+    setCurrentPage("/contact");
+  });
   return (
     <main className="main-content contact">
       <section className="contact-data">

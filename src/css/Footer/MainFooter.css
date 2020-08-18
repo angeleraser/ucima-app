@@ -7,6 +7,10 @@
   place-items: flex-start;
   font-family: "Karla", sans-serif;
   background-color: var(--light-gray);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url(../../images/svg/bg-pattern-footer-mobile.svg);
+  background-size: 100%;
 }
 .main-footer nav .footer-list {
   display: grid;
@@ -97,6 +101,9 @@
   .main-footer {
     grid-template-columns: 320px 200px 150px;
     justify-content: space-between;
+    background-image: url(../../images/svg/bg-pattern-footer-desktop.svg);
+    background-size: initial;
+
   }
   .main-footer .footer-list,
   .main-footer .social-links {

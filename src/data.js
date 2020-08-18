@@ -208,9 +208,9 @@ export const faqData = [
             Mejor visualización de las estructuras y la posibilidad de evaluar
             toda la cavidad con una incisión de 0,5-1 cm.
           </li>
-          <li>Menos dolor postoperatorio.</li>
+          <li>Menos dolor post-operatorio.</li>
           <li>
-            Menos complicaciones a largo, corto, mediano plazo. La cirugía
+            Menos complicaciones a largo, mediano y corto plazo. La cirugía
             abierta puede presentar infección de la herida operatoria.
           </li>
           <li>Incorporación a sus actividades laborales de forma precoz.</li>

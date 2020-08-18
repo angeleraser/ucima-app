@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Ocupations from "./Ocupations";
 import AcademicAwards from "./AcademicAwards";
 import Works from "./Works";
-import { useHistory } from "react-router-dom";
+import { AppContext } from "../../App/AppContext";
 const Personal = () => {
-  const {location:{pathname}} = useHistory();
-  console.log(pathname)
+  const { setCurrentPage } = useContext(AppContext);
+  useEffect(() => {
+    setCurrentPage("/personal");
+  });
   return (
     <main className="main-content personal">
       <Ocupations />

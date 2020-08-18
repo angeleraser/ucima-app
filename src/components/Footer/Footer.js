@@ -7,14 +7,14 @@ import { useContext } from "react";
 import { AppContext } from "../App/AppContext";
 import { Link } from "react-router-dom";
 const Footer = () => {
-  const { links, removeCurrentLinkStyle } = useContext(AppContext);
+  const { links, hiddenMenu } = useContext(AppContext);
   return (
-    <footer className="main-footer outline-none">
+    <footer className="main-footer">
       <ul className="contact-info">
         <Link
           onClick={() => {
-            removeCurrentLinkStyle();
             window.scrollTo(0, 0);
+            hiddenMenu();
           }}
           to={"/"}
           className="nav-logo">
@@ -32,11 +32,14 @@ const Footer = () => {
       {/* Social links  */}
       <nav>
         <ul className="footer-list">
-          {links.map((link) => (
-            <li key={link.name}>
-              <LinkButton route={link.route} label={link.name} />
-            </li>
-          ))}
+          {links.map(
+            (link) =>
+              link.route !== "/" && (
+                <li key={link.name}>
+                  <LinkButton route={link.route} label={link.name} />
+                </li>
+              )
+          )}
         </ul>
       </nav>
       <ul className="social-links">

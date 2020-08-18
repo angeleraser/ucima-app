@@ -5,16 +5,15 @@ import Home from "./Home/Home";
 import Blog from "./Blog/Blog";
 import Ucima from "./Ucima/Ucima";
 import Contact from "./Contact/Contact";
-import { Switch, Route} from "react-router-dom";
-
+import { Switch, Route } from "react-router-dom";
 const Main = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home}></Route>
-      <Route exact path="/personal" component={Personal}></Route>
-      <Route exact path="/blog" component={Blog}></Route>
-      <Route exact path="/ucima" component={Ucima}></Route>
-      <Route exact path="/contact" component={Contact}></Route>
+      <Route path="/personal" component={Personal}></Route>
+      <Route path="/blog" component={Blog}></Route>
+      <Route path="/ucima" component={Ucima}></Route>
+      <Route path="/contact" component={Contact}></Route>
     </Switch>
   );
 };

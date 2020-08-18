@@ -4,7 +4,7 @@ import { LinkButton } from "../../BaseComponents/LinkButton";
 const Works = () => {
   return (
     <section className="works">
-      <h2>Trabajos realizados</h2>
+      <h2 className='animate__animated animate__backInLeft'>Trabajos realizados</h2>
       <ul className="works-list">
         <li>
           {" "}

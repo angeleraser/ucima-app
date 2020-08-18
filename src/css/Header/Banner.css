@@ -68,7 +68,6 @@
     padding: 90px;
     background-image: url(../../images/svg/bg-pattern-intro-left-desktop.svg),
       url(../../images//svg/bg-pattern-intro-right-desktop.svg);
-    background-size: initial, 50% 60%;
   }
 
   .banner .content {

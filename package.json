@@ -1,6 +1,6 @@
 {
   "name": "ucima-app",
-  "homepage":"https://ucima15.com",
+  "homepage":".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

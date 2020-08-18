@@ -313,7 +313,7 @@ export const socialNetworks = [
   },
   {
     network: "Instagram",
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/gcoiro15",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
         <path
